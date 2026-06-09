@@ -1,2 +1,5 @@
 [init]
 	defaultBranch = master
+[user]
+	name = kattwoolf
+	email = kattwoolf@users.noreply.github.com
