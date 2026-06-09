@@ -1,0 +1,15 @@
+background-color=#1e1e2ee6
+text-color=#cdd6f4
+border-color=#f5c2e7
+progress-color=#f5c2e7
+border-radius=0
+border-size=2
+default-timeout=5000
+max-visible=5
+sort=-time
+padding=12
+font=Hack 12
+width=400
+height=150
+anchor=top-right
+layer=overlay

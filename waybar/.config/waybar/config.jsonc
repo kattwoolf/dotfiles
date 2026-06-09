@@ -1,0 +1,79 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 4,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad"
+    ],
+    "modules-center": [
+        "sway/window"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "cpu",
+        "memory",
+        "clock",
+        "tray"
+    ],
+    "sway/workspaces": {
+        "disable-scroll": false,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{name}"
+    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": ["", ""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": true
+    },
+    "memory": {
+        "format": "{}% "
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-disconnected": "Disconnected ⚠"
+    },
+    "pulseaudio": {
+        "format": "{volume}% {icon}  {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "{volume}%  ",
+        "format-source-muted": "",
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+    "tray": {
+        "spacing": 10
+    }
+}

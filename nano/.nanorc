@@ -1,0 +1,7 @@
+set nohelp
+
+unbind ^F main
+bind ^F right main
+
+unbind ^B main
+bind ^B left main
